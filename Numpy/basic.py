@@ -76,35 +76,35 @@ print("Random:\n", i)
 
 print()
 
-# linspace
+print("======================= Linspace ======================")
 # Definition: linspace(start, stop, num) generates evenly spaced numbers between start and stop.
 j = np.linspace(-10, 10, 10)
 print("Linspace:", j)
 
 print()
 
-# identity
+print("======================= Identity ======================")
 # Definition: identity() creates an identity matrix where diagonal elements are 1 and the rest are 0.
 k = np.identity(3)
 print("Identity Matrix:\n", k)
 
 print()
 
-# empty
+print("======================= Empty ======================")
 # Definition: empty() creates an array without initializing entries, so it may contain random values.
 l = np.empty((3,3))
 print("Empty Array:\n", l)
 
 print()
 
-# full
+print("======================= Full ======================")
 # Definition: full() creates an array filled with a specified constant value.
 m = np.full((3,3), 7)
 print("Full Array:\n", m)
 
 
 
-# Array Attributes
+print("======================= Array Attributes ======================")
 a1 = np.arange(10)                     # 1D array
 a2 = np.arange(12, dtype=float).reshape(3,4)   # 2D array
 a3 = np.arange(8).reshape(2,2,2)       # 3D array
@@ -118,23 +118,23 @@ print()
 print("Array 3:\n", a3)
 print()
 
-# ndim
+print("======================= ndim ======================")
 # Definition: Returns the number of dimensions of the array
 print("Dimension:", a3.ndim)
 
-# shape
+print("======================= shape ======================")
 # Definition: Returns the shape of the array (size in each dimension)
 print("Shape:", a3.shape)
 
-# size
+print("======================= size ======================")
 # Definition: Returns the total number of elements in the array
 print("Size:", a3.size)
 
-# itemsize
+print("======================= itemsize ======================")
 # Definition: Returns the size (in bytes) of each element
 print("Itemsize:", a3.itemsize)
 
-# dtype
+print("======================= dtype ======================")
 # Definition: Returns the data type of the array elements
 print("Dtype:", a3.dtype)
 
@@ -149,7 +149,7 @@ print("New dtype:", b.dtype)
 print()
 
 
-# Array Operations
+print("======================= Array Operation ======================")
 a1 = np.arange(12).reshape(3,4)
 a2 = np.arange(12,24).reshape(3,4)
 print("Array 1:\n", a1)
@@ -175,7 +175,7 @@ print()
 
 
 
-# array function
+print("======================= Array Function ======================")
 a1 = np.random.random((3,3))
 a1 = np.round(a1 * 100)
 print(a1)
@@ -234,7 +234,7 @@ print("Ceil:", np.ceil(np.random.random((2,3)) * 100))
 
 
 
-# INDEXING AND SLICING
+print("======================= Indexing and Slicing ======================")
 
 # 1D ARRAY
 a1 = np.arange(10)      
@@ -274,7 +274,7 @@ print()
 
 
 
-# iterating
+print("======================= Iterating ======================")
 
 # 1D array iteration
 a1 = np.arange(5)
@@ -312,7 +312,7 @@ for i in np.nditer(a3):     # iterates each element in 3D array
 
 
 
-# RESHAPE / TRANSPOSE / RAVEL
+print("======================= Reshape/ Transpose/ Ravel ======================")
 a1 = np.arange(12)
 print(a1)
 
