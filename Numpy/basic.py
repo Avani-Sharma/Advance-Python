@@ -1,8 +1,9 @@
 # numpy: it is a python library that is used to manipulate, process and analyze the data.
 # NumPy stands for numeric python or numerical python.
+
 import numpy as np
 
-# 1D ARRAY
+print("=====================1D Array===================")
 # Definition: A 1D array is called a vector. It contains elements arranged in a single row.
 a = np.array([1, 2, 3])
 print("1D Array:", a)
@@ -10,15 +11,16 @@ print("Type:", type(a))
 
 print()
 
-# 2D ARRAY
+print("=====================2D Array=====================")
 # Definition: A 2D array is called a matrix. It contains rows and columns.
 b = np.array([[1,2,3],
               [4,5,6]])
 print("2D Array:\n", b)
+print("Type:", type(b))
 
 print()
 
-# 3D ARRAY
+print("=======================3D Array======================")
 # Definition: A 3D array is called a tensor. It contains multiple 2D matrices stacked together.
 c = np.array([
     [[1,2,3],
@@ -27,47 +29,47 @@ c = np.array([
     [[7,8,9],
      [10,11,12]]
 ])
-
 print("3D Array:\n", c)
+print("Type:", type(c))
 
 print()
 
-# dtype
+print("========================= dtype =====================")
 # Definition: The dtype parameter is used to specify or convert the data type of array elements.
 d = np.array([1,2,3], dtype=bool)
 print("Dtype (bool):", d)
 
 print()
 
-# arange
+print("======================= Arange ======================")
 # Definition: np.arange(start, stop, step) generates evenly spaced values within a given range.
 e = np.arange(1, 11, 2)
 print("Arange:", e)
 
 print()
 
-# reshape
+print("======================= Reshape() ======================")
 # Definition: reshape() changes the shape of an array without changing its data.
 f = np.arange(1, 11).reshape(5,2)
 print("Reshape:\n", f)
 
 print()
 
-# ones
+print("======================= ones() ======================")
 # Definition: np.ones() creates an array where all elements are initialized to 1.
 g = np.ones((3,4))
 print("Ones:\n", g)
 
 print()
 
-# zeros
+print("======================= zeros() ======================")
 # Definition: np.zeros() creates an array where all elements are initialized to 0.
 h = np.zeros((4,5))
 print("Zeros:\n", h)
 
 print()
 
-# random
+print("======================= random ======================")
 # Definition: random() generates random numbers between 0 and 1.
 i = np.random.random((3,4))
 print("Random:\n", i)
