@@ -333,7 +333,7 @@ print(np.ravel(a2))
 
 
 
-# STACKING ARRAYS
+print("======================= Stacking Array ======================")
 a1 = np.arange(6).reshape(2,3)
 a2 = np.arange(6,12).reshape(2,3)
 print("Array 1:")
@@ -352,3 +352,22 @@ print()
 # vertical stacking
 # vstack → joins arrays row wise (one above another)
 print(np.vstack((a1, a2)))  
+
+
+
+print("================== Spliting Array ===================")
+a1 = np.arange(12).reshape(3,4)
+print("Original Array:")
+print(a1)
+
+print()
+
+# horizontal split
+# hsplit → splits array column wise (horizontal direction)
+print(np.hsplit(a1, 2))  
+
+print()
+
+# vertical split
+# vsplit → splits array row wise (vertical direction)
+print(np.vsplit(a1, 3))  
