@@ -68,7 +68,11 @@ import numpy as np
 # print(b[~(b%7 !=0)])
 
 
-# broadcasting
+# broadcasting: it describes how numpy treats array with different shapes during arithmetic operation.
+# the smaller array is "broadcast" across the larger array so that they have compatible shapes.
+# Rule 1: Compare dimensions from the right
+# Shapes are compared from right to left
+# If dimensions are equal →  Compatible
 print("================== Broadcasting =================")
 # same shape
 x = np.arange(6).reshape(2,3)
@@ -78,6 +82,8 @@ print(y)
 print("same shape: ", x+y)
 print()
 
+# Rule 2: If one dimension is 1, it can be stretched
+# If a dimension is 1, it can be expanded to match the other array
 # different shape
 x1 = np.arange(6).reshape(2,3)
 y1 = np.arange(3).reshape(1,3)
