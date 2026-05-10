@@ -1,5 +1,6 @@
 # numpy: it is a python library that is used to manipulate, process and analyze the data.
 # NumPy stands for numeric python or numerical python.
+# for installation of numpy : pip install numpy
 
 import numpy as np
 
