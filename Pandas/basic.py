@@ -25,11 +25,31 @@ print(a.dtype)
 print()
 
 # 2: data frame: a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure
+# it as a Python version of an Excel spreadsheet or a SQL table
 data = {
     'Name': ['avani', 'chinki'],
-    'Marks': [20, 21],
+    'Marks': [20, np.nan],
     'location': ['Jaipur', 'Delhi']
 }
 print(data)
-print(pd.DataFrame(data, index=['first_stud', 'second_stud']))
+b = pd.DataFrame(data, index=['first_stud', 'second_stud'])
+print(b)
+print(b['location'])
 
+# to perform any string operations on the object data type column we use .str -> any function
+# to add any new column into the dataframe then we use 
+# dataframe_name[new_column] = new_value
+b['Upper_letter'] = b['location'].str.upper()
+print(b['Upper_letter'])
+print()
+# to add new col
+b['new_col'] = 0
+print(b['new_col'])
+print()
+# to find max
+print(b['Marks'].max())
+# to check any null value from the series (np.nan)
+# b['col].isna(): --- this returns the boolean value
+# if the entry is true === then it means there is null value present
+# if the entry is false === then there is not null is present 
+print(b['Marks'].isna().sum())
