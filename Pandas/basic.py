@@ -53,3 +53,39 @@ print(b['Marks'].max())
 # if the entry is true === then it means there is null value present
 # if the entry is false === then there is not null is present 
 print(b['Marks'].isna().sum())
+
+print()
+
+# ques1: 
+# create a data frame using dict 
+# ex: employee: emp_name, salary, year of experience, increment
+# atleast have one or more than null value in each of the col 
+# first check the data type of if the column separately
+# check the highest salary if the person 
+# median salary
+# mode of the salary
+# how many people are at the same experience
+# check each of the col which has how many null values (null value count)
+
+employee = {
+    'Name': ['avani', 'chinki', 'himani', 'pihu', 'urvashi'],
+    'salary': [3000, np.nan, 1500, np.nan, 2000],
+    'YOE': [2, 3, 1, 4, 2],
+    'increment': [400, 300, 500, 200, 400]
+}
+print(employee)
+emp = pd.DataFrame(employee)
+print(emp)
+# data types of each column
+print(emp.dtypes)
+# highest salary
+print(emp['salary'].max())
+# median salary
+print(emp['salary'].median())
+# mode of salary
+print(emp['salary'].mode())
+# same experience
+print(emp['YOE'].value_counts())
+# null values
+print(emp.isnull().sum())
+
