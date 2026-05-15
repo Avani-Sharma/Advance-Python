@@ -88,4 +88,3 @@ print(emp['salary'].mode())
 print(emp['YOE'].value_counts())
 # null values
 print(emp.isnull().sum())
-
