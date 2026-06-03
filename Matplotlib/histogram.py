@@ -10,3 +10,4 @@ plt.title('Distribution of Ages')
 plt.xlabel('Age')
 plt.ylabel('Frequency')
 plt.show()
+
