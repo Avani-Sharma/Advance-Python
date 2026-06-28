@@ -82,7 +82,7 @@ The purpose of this repository is to:
 - Pandas
 - Matplotlib
 - Seaborn
-- Jupyter Notebook / VS Code
+- VS Code
 
 ## 👩‍💻 Author
 
